@@ -12,7 +12,7 @@ I checked a junior analyst's Value at Risk model, found why it understates tail 
 - Had an AI write a VaR backtest function, revised my prompt once, and checked the result against my own count.
 
 ## Key Findings
-- At 99%, the normal VaR understated the historical VaR by 12.7% ($40,393 on the portfolio). At 95% it was slightly too large, so a 95% check would have made the model look safe.
+- the normal VaR understated the historical VaR by 12.7% ($40,393 on the portfolio). At 95% it was slightly too large, so a 95% check would have made the model look safe.
 - The Student-t gave a VaR close to the historical one and the highest Expected Shortfall, so it handles fat tails better than the normal.
 - Antithetic variates cut the Monte Carlo standard error by 1.26x with the same number of paths.
 - The normal 99% VaR was breached on 1.71% of days instead of the 1% it promises.
